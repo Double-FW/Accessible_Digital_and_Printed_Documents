@@ -2,15 +2,16 @@
 
 A practical, evidence-based guide to designing documents that remain readable, navigable, and usable across digital screens, print, and hybrid publishing formats.
 
-This repository contains a comprehensive design guide for creating accessible documentation that preserves meaning and usability for people using screen readers, magnification, braille, large print, print-on-paper workflows, and conventional reading devices.
+This repository contains a comprehensive design guide for creating accessible documentation that preserves meaning and usability for people using screen readers, magnification, braille, large print, and other access methods across digital and print outputs.
 
 ## Short description
 
-This project provides a structured framework for accessible document design across typography, structure, colour, images, data tables, forms, PDFs, EPUBs, and printed books. It is intended for document designers, authors, editors, developers, publishers, and teams using AI-assisted writing workflows who need a clear, practical reference grounded in accessibility principles and verification practices.
+This project provides a structured framework for accessible document design across typography, structure, colour, images, data tables, forms, PDFs, EPUBs, and printed books. It is intended for documentation teams, designers, editors, and accessibility reviewers working with digital and physical publication formats.
 
 ## Repository contents
 
 - `Accessible_documentation_design.md` — the complete guidance document
+- `AGENTS.md` — operational instructions and accessibility design guardrails for AI-assisted work in this repository
 - `README.md` — overview and usage notes
 - `LICENSE` — MIT license
 
@@ -73,6 +74,7 @@ This resource is useful for:
 Start with the main guide:
 
 - Read `Accessible_documentation_design.md` for the full document
+- Review `AGENTS.md` if you are using AI agents or automation in this repository so the project-specific accessibility and review instructions are applied consistently
 - Use it as a reference during design and review
 - Apply the guidance when creating or revising documents for web, print, PDFs, EPUBs, and hybrid outputs
 - Use the verification checklist before publishing or releasing a final edition
@@ -102,6 +104,7 @@ The document is built around several core principles:
 
 The guide references a range of accessibility resources and formats, including WCAG, PDF accessibility guidance, EPUB accessibility guidance, and practical design recommendations. It also distinguishes between:
 
+- evidence-based source rules
 - standard-based rules
 - source-based recommendations
 - synthesis-based practical guidance
@@ -134,11 +137,12 @@ This repository is primarily a documentation resource. Contributions are welcome
 - add format-specific accessibility checklists
 - improve the organisation of the main document
 - add supporting materials for authors and teams
+- align AI-assisted work with the repository instructions in `AGENTS.md`
 
 ## Project status
 
-This repository is a reference document and knowledge resource for accessible document design. It is intended to support thoughtful, user-centred, standards-aware publication practices across digital and print outputs.
+This repository is a reference document and knowledge resource for accessible document design. It is intended to support thoughtful, user-centred, standards-aware publication practices across digital, hybrid, and print environments.
 
 ## Recommended next step
 
-Open `Accessible_documentation_design.md` and use it as a working reference when creating accessible documentation for your audience.
+Open `Accessible_documentation_design.md` and use it as a working reference when creating accessible documentation for your audience. If you are working with AI assistance in this repository, also review `AGENTS.md` for the project-specific operating guidance.
