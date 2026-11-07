@@ -480,4 +480,4 @@ These primary references were checked on 28 October 2026 to clarify technical re
 
 **V4 RNIB Large and giant print.** Supports the common 16 to 18pt description of large print and the need to find a suitable reading format. The 12 to 14pt general starting range in this guide is an e[...]
 
-**V5 W3C EPUB Accessibility 1.1.** Covers publication accessibility and discoverability metadata. Consult it alongside the relevant EPUB specification and selected WCAG target. See <https://www.w[...]
+**V5 W3C EPUB Accessibility 1.1.** overs publication accessibility and discoverability metadata. Consult it alongside the relevant EPUB specification and selected WCAG target. See [EPUB Accessibility 1.1](https://www.w3.org/TR/epub-a11y-11/).
