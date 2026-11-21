@@ -1,0 +1,28 @@
+{
+  "source_repository": "Double-FW/Accessible_Digital_and_Printed_Documents",
+  "destination_dataset": "GarethFW/Accessible_Digital_and_Printed_Documents",
+  "source_files": [
+    "AGENTS.md",
+    "Accessible_Documents_RAG_and_Prompts/Content_Creation_and_Production_Activities_and_Prompts.md",
+    "Accessible_Documents_RAG_and_Prompts/RAG_Reference.md",
+    "Accessible_Documents_RAG_and_Prompts/README.md",
+    "Accessible_Documents_RAG_and_Prompts/Source_Coverage.md",
+    "Accessible_documentation_design.md",
+    "LICENSE",
+    "NOTICE.md",
+    "Production_Workflow_and_Handoff_Map.md",
+    "README.md",
+    "Related_Double_FW_Guidance.md",
+    "Terminology_Alignment.md"
+  ],
+  "document_files": [
+    "README.md",
+    "AGENTS.md",
+    "Accessible_documentation_design.md",
+    "Production_Workflow_and_Handoff_Map.md",
+    "Terminology_Alignment.md",
+    "Related_Double_FW_Guidance.md",
+    "NOTICE.md"
+  ],
+  "approved_license_sha256": "718328364da5d7ba8e2fe2b00e16126f46714ef2d2e9d16b04cf2706d48142f1"
+}

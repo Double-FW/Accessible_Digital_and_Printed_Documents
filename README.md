@@ -49,7 +49,7 @@ Retrieve maintained source sections with their scope, qualifications and rule ID
 
 Keep source guidance, project evidence, synthetic examples, proposals and authorised decisions distinct. `unknown`, `not_tested` and `not_applicable` are different states; unresolved decisions are separate. A prompt output is not a test result or permission to publish. Exclude confidential, personal or otherwise unauthorised material from public exports.
 
-No Hugging Face sync workflow or dataset exporter is included at this revision. Preparing reusable documentation does not itself create or update a dataset.
+The [weekly Hugging Face sync](huggingface/SETUP.md) exports the approved source files to [GarethFW/Accessible_Digital_and_Printed_Documents](https://huggingface.co/datasets/GarethFW/Accessible_Digital_and_Printed_Documents). It is scheduled for Mondays at 10:31 UTC and can be run manually. Publishing requires the dataset-scoped HF_TOKEN Actions secret; installing the workflow does not establish that a first sync has succeeded. The exported views overlap and are source guidance, not executed tests or validated answers.
 
 ## Maintaining the guidance
 
