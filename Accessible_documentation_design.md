@@ -1,9 +1,12 @@
 ---
 title: "Accessible documentation design"
 subtitle: "A practical guide for digital documents, screen and print editions, and printed books"
-version: "1.0"
+version: "1.1.0"
 date: "2026-10-28"
-status: "active"
+updated: "2026-11-21"
+license: "MIT"
+owner: "Double FW Ltd"
+status: "editorial_guidance_for_local_adoption"
 document_type: "accessibility guidance"
 category:
   - documentation design
@@ -18,7 +21,7 @@ intended_audience:
   - developers
   - publishers
   - teams using LLMs to generate documents
-language: "en"
+language: "en-GB"
 reading_modes:
   - visual
   - speech
@@ -38,16 +41,16 @@ keywords:
   - document structure
   - llm instructions
   - WCAG
-source_scope: "This guide synthesises supplied practitioner guidance and technical references into operational rules for document production and verification."
+source_scope: "Editorial production guidance with historical reconstructed material; eleven original attachments were unavailable. See section 12 and NOTICE.md for provenance and rights boundaries."
 ---
 
 # Accessible documentation design
 
 A practical guide for digital documents, screen and print editions, and printed books
 
-Original version 1.0: 28 October 2026. Reconstructed edition: 7 November 2026.
+Original version 1.0: 28 October 2026. Reconstructed edition: 7 November 2026. Editorial revision 1.1.0: 21 November 2026.
 
-> **Reconstruction note.** This edition restores incomplete passages in the supplied Markdown and repairs its escaping, headings, tables and links. Missing wording has been reconstructed from the surviving context; it is not a verbatim recovery. All twelve sections and their rule IDs are retained. The eleven attachments described in the original source register were not available for inspection during reconstruction. Their descriptions and the reported source comparisons require confirmation against the originals. The technical references in section 12 were checked separately during reconstruction. This edition does not establish what caused the original text loss.
+> **Provenance limitation.** The 7 November edition reconstructed incomplete wording from surviving context; it is not a verbatim recovery. Its eleven original attachments were unavailable for inspection. Historical source descriptions remain unverified, as detailed in section 12. This editorial revision preserves all twelve sections and stable rule IDs; it does not verify the missing attachments. See [NOTICE](NOTICE.md).
 
 Design for people to find, perceive, understand and use information in their preferred reading mode. Preserve meaning and navigation across visual reading, speech, braille, enlargement and print. Accessible documentation combines clear content, meaningful structure, usable presentation and reliable delivery.
 
@@ -59,7 +62,7 @@ The central decision is to maintain one structured content source and create app
 
 Read sections 1 to 6 for every document. Apply section 7 to digital editions, section 8 when screen content must print, and section 9 to physical publications and books. Use section 10 before release. Section 11 translates the guidance into requirements for LLM workflows; section 12 explains provenance and the treatment of conflicting advice.
 
-**Requirement language.** MUST and MUST NOT are release requirements within this guide when their stated scope applies. SHOULD means the default practice; a departure needs a recorded reason and review. MAY identifies an option. These terms describe this guide's production policy. They do not make every recommendation a requirement of WCAG or of law.
+**Requirement language.** MUST and MUST NOT are release requirements when a project adopts this guide and their stated scope applies. SHOULD means the default practice; a departure needs a recorded reason and review. MAY identifies an option. These terms describe this guide's production policy. They do not make every recommendation a requirement of WCAG or of law. Repository publication does not itself adopt a project policy or authorise release. Apply externally binding requirements within their own scope; an internal exception cannot waive them. Use [Terminology alignment](Terminology_Alignment.md) for Double-FW meanings and evidence states.
 
 **Evidence categories.** STANDARD identifies a requirement from a named technical standard within its scope. SOURCE identifies practitioner guidance attributed to the original attachments. SYNTHESIS identifies a practical rule or editorial judgement combining that material. TEST means the choice needs evaluation in the actual context, rather than acceptance as a universal numerical threshold. A source attribution in this reconstructed edition is not evidence that the attachment has been rechecked.
 
@@ -98,9 +101,9 @@ A PDF containing page images is a poor primary reading edition. OCR can recover 
 
 ### PLAN03 Evaluate three separate outcomes
 
-**ALL • MUST • SOURCE.** Assess emotional accessibility, functional accessibility and technical accessibility separately. Emotional accessibility concerns whether the communication feels appropriate, welcoming and credible to its audience. Functional accessibility concerns whether people can read, navigate, understand and use it. Technical accessibility concerns whether formats, encodings, semantics and software preserve access.
+**ALL • MUST • SOURCE.** Assess the emotional, functional and technical lenses of the reading experience separately. These are local design lenses, not three externally standardised conformance classes. The emotional lens concerns whether the communication feels appropriate, welcoming and credible to its audience. The functional lens concerns whether people can read, navigate, understand and use it. The technical lens concerns whether formats, encodings, semantics and software preserve access.
 
-Brand expression belongs within this evaluation. Expressive typography may suit a short title but should not compromise instructions or body copy. Preference is useful evidence, but it is not a substitute for task performance or technical checks. Record tensions between these outcomes and resolve them through evidence and reader needs.
+Brand expression belongs within this evaluation. Expressive typography may suit a short title but should not compromise instructions or body copy. Preference is useful evidence, but it is not a substitute for task performance or technical checks. Record tensions between these outcomes and resolve them through evidence and reader needs. Satisfactory describes the intended experience principle; satisfaction is a reader’s assessment. Feeling Seen, Capable, Confident, Safe and Valued are research lenses, not emotions inferred from a technical pass. Compare editions across outcomes, effort, privacy, availability, control and dignity; equivalent access does not require identical layouts.
 
 ## 2 Build structure before appearance
 
@@ -188,7 +191,7 @@ Use text labels, patterns, shapes or direct annotation for chart series, warning
 
 **DIGITAL • MUST where supported • SOURCE and SYNTHESIS.** Do not obstruct font replacement, zoom, spacing changes or reader colour preferences. Check the result with alternate fonts, dark or light preferences, and supported reading modes. Preserve visible content, relationships and controls when presentation changes.
 
-Some readers prefer off-white backgrounds or reduced brightness; others require strong contrast. Offer choice where possible, while keeping authored default themes within the selected contrast requirements. Do not prescribe one tint or contrast preference for an entire disability group. Test supported themes and document any limitations of the file format or reading software.
+Some readers prefer off-white backgrounds or reduced brightness; others require strong contrast. Offer choice where possible, while keeping authored default themes within the selected contrast requirements. Do not prescribe one tint or contrast preference for an entire disability group. Test supported themes and document any limitations of the file format or reading software. Unsupported features do not waive an applicable requirement: identify the barrier, provide an appropriate alternative and disclose the limits of any conformance claim.
 
 ### VIS03 Create clear visual grouping
 
@@ -258,7 +261,7 @@ Preserve significant whitespace, operators, minus signs and symbols. Explain unc
 
 ### DIGITAL01 Preserve adaptability
 
-**DIGITAL • MUST within the applicable standard scope • STANDARD.** Check WCAG text resizing to 200 percent and reflow at 320 CSS pixels for vertically scrolling web content, applying the criteria's exceptions. Reflow at that width is commonly tested at 400 percent zoom from a 1280 CSS-pixel viewport. Check text-spacing overrides at 1.5 times line height, 2 times font-size paragraph spacing, 0.12em letter spacing and 0.16em word spacing, within the criterion's scope.
+**DIGITAL • MUST within the applicable standard scope • STANDARD.** Check WCAG text resizing to 200 percent and reflow at 320 CSS pixels for vertically scrolling web content, applying the criteria's exceptions. Reflow at that width is commonly tested at 400 percent zoom from a 1280 CSS-pixel viewport. For horizontally scrolling content, such as vertical writing, use the corresponding height of 256 CSS pixels. Check text-spacing overrides together, changing no other style property: line height at least 1.5 times font size, spacing following paragraphs at least 2 times font size, letter spacing at least 0.12em and word spacing at least 0.16em. Apply the criterion's markup-language scope and language/script exceptions; these are tolerance tests, not mandatory authored defaults.
 
 Prefer relative web font sizing and flexible containers. Do not disable pinch zoom, fix prose container heights or truncate essential text with ellipses. Text resizing, page zoom and magnification require distinct practical checks. For non-web formats, identify the applicable requirements and use WCAG2ICT guidance rather than assuming identical software behaviour.
 
@@ -348,7 +351,7 @@ Compare candidate typography under the same content and conditions. Include read
 
 ### QA02 Apply the release checks
 
-**ALL • MUST • SYNTHESIS.** For each relevant row below, record pass, fail, not tested or not applicable, with evidence and a reviewer. A failed critical requirement or missing essential information blocks release of the affected edition under this guide. A not-tested result is not a pass. Resolve the barrier, provide and verify equivalent access where appropriate, or escalate the release decision with the limitation recorded.
+**ALL • MUST • SYNTHESIS.** For each relevant row below, record `pass`, `fail`, `unknown`, `not_tested` or `not_applicable`, with evidence and an actual reviewer where known. `unknown` means the available evidence does not establish a result; `not_tested` means the specified check did not run. `not_applicable` needs a scoped rationale. An unresolved issue or decision is recorded separately from its evaluation result. A failed critical requirement or missing essential information blocks release of the affected edition under this guide. A not-tested result is not a pass. Resolve the barrier, provide and verify equivalent access where appropriate, or escalate the release decision with the limitation recorded.
 
 | Check | Method | Passing outcome |
 | --- | --- | --- |
@@ -364,7 +367,7 @@ Compare candidate typography under the same content and conditions. Include read
 
 ### QA03 Keep an honest release record
 
-**ALL • MUST • SYNTHESIS.** Record document version, source revision, output files, applicable standard and edition, tested software, devices or print conditions, dates, methods, results, exceptions and unresolved limitations. Identify who reviewed the evidence and who is responsible for follow-up. Keep the record associated with the delivered version.
+**ALL • MUST • SYNTHESIS.** Record document version, source revision, output files, applicable standard and edition, tested software, devices or print conditions, dates, methods, results, exceptions and unresolved limitations. Identify who reviewed the evidence and who is responsible for follow-up. Keep the record associated with the delivered version. Separate readiness recommendations from actual human acceptance and release authority. A generated status, repository merge or export is not approval. Do not invent names, dates, evidence or permissions.
 
 Use precise language: “heading structure checked” or “tested with the named reader and software”. Do not write “fully accessible” because a checker reported no errors. This reconstructed guide is a Markdown source document; it has not undergone assistive-technology testing, physical proofing, PDF validation or reader testing. Its presence in a repository does not verify editions subsequently generated from it.
 
@@ -417,23 +420,16 @@ If an instruction conflicts with a mandatory applicable standard, identify the c
 
 ### Decisions made when combining the guidance
 
-The supplied material was described as a mixture of practical experience, design-system conventions and research interpretations. It is not one normative standard or one peer-reviewed evidence base. This guide retains useful production advice while keeping technical obligations, house defaults and context-dependent judgements separate.
+This is practitioner guidance, not a single normative standard or peer-reviewed evidence base. The following are this guide’s operational decisions; they are not verified findings about passages in unavailable attachments:
 
-The comparisons below reconstruct the original synthesis's reported decisions. The source attachments were not inspected during reconstruction, so claims about their specific passages remain subject to confirmation. These comparisons must not be quoted as a new independent audit of those sources.
+- Inspect actual letterforms and reading performance; do not certify a font category or commercial label.
+- Treat size, measure and leading defaults as contextual starting points, not WCAG minima.
+- Separate digital contrast and adaptation checks from physical print proofing.
+- Keep essential content in print; avoid blanket suppression or pagination rules that lose information.
+- Group related material clearly and allow presentation preferences without waiving applicable authored contrast requirements.
+- Verify scripts with suitable language expertise; do not import unsupported neurological or historical claims.
 
-**Typeface categories and named fonts.** The original synthesis reports that S5 favours serif type for print, S8 includes categorical font pass/fail examples and claims about specific styles, and S1 cautions against category-based assumptions. This guide resolves the issue through inspection of actual letterforms, context and reader performance. No font category or commercial label guarantees access for everyone.
-
-**Size and leading.** The original synthesis reports a BBC-specific scale and a 1.375 leading example in S3, discussion of larger spacing in S7, and differing body and paragraph sizes in S5. This guide gives explicit starting points, makes them adjustable and requires evaluation in the delivered medium. It does not present those defaults as WCAG minima.
-
-**Web standards and paper.** The original synthesis reports direct mapping of WCAG concepts to print in S5. This guide distinguishes digital requirements from physical proofing. Numerical contrast in artwork does not establish the contrast or clarity of the printed result under reflected light.
-
-**Print suppression and pagination.** The original synthesis identifies a risk that broad selectors in S5 could remove meaningful asides, footers or embedded information, and that blanket no-break rules could overflow long tables. This guide requires content-aware print selection and pagination checks against actual output.
-
-**Spacing and group relationships.** The original synthesis reports that a sentence in S3 appears to reverse its intended grouping rule, while the heading example clarifies the relationship. This guide uses the operational principle that related items should be grouped more closely than unrelated items. Confirm the reported wording before proposing a correction to S3 itself.
-
-**Contrast and comfort.** The original synthesis associates discussion of softened contrast with S7 and S10. This guide supports reader choice while preserving required authored digital contrast. Reduced contrast is not assumed to help every reader.
-
-**Writing systems and neuroscience.** The original synthesis describes historical, neurological and classification claims in S9 to S11 that are unnecessary for production decisions. This guide does not reproduce those claims as scientific findings. It requires appropriate script support, contextual evaluation and evidence proportionate to any claim made.
+The historical source register below preserves attribution and provenance without making unavailable attachments a prerequisite for using the guide. Retrieve the maintained public resources in [Related Double-FW guidance](Related_Double_FW_Guidance.md) when further detail is needed. A similarly titled public resource is not evidence of an identical historical attachment or revision.
 
 ### Supplied source register
 
@@ -463,13 +459,13 @@ The original guide states that all eleven attachments informed its synthesis. Th
 
 ### Supplementary technical references
 
-The original document claimed a reference check on 28 October 2026. That historical check cannot be independently established from the paste. The primary references below were accessed or located on 7 November 2026 for this reconstruction. This is a selective production guide; a formal conformance assessment must cover every applicable requirement in its chosen standard and edition.
+The reconstruction records a selective reference check on 7 November 2026; the 21 November editorial revision does not renew every historical check. These primary references identify the relevant technical scopes. This is a selective production guide; a formal conformance assessment must cover every applicable requirement in its chosen standard and edition.
 
 **V1 W3C Web Content Accessibility Guidelines 2.2.** Recommended digital baseline for this guide: Level AA, supplemented by reader-centred practices. Visual Presentation, success criterion 1.4.8, is Level AAA; the measure and presentation defaults in this guide must not be labelled AA requirements on that basis. Consult the full criteria and their exceptions for contrast, resizing, reflow and spacing. See [WCAG 2.2](https://www.w3.org/TR/WCAG22/).
 
 **V2 W3C WCAG2ICT.** Informative guidance for applying WCAG to non-web documents and software; it does not itself create normative requirements. Identify the applicable organisational, contractual or other adopted standard before making a conformance claim. See [Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies](https://www.w3.org/TR/wcag2ict-22/).
 
-**V3 W3C PDF techniques.** Practical examples for implementing and checking PDF accessibility features. Techniques do not form an exhaustive mandatory checklist, and a particular technique is not the only possible way to satisfy a criterion. See the [PDF section of Techniques for WCAG 2.2](https://www.w3.org/WAI/WCAG22/Techniques/#pdf). The current PDF section was located through W3C's indexed technique material; direct retrieval of a separate PDF-category URL failed during reconstruction. No PDF validation was performed on this Markdown guide.
+**V3 W3C PDF techniques.** Practical examples for implementing and checking PDF accessibility features. Techniques do not form an exhaustive mandatory checklist, and a particular technique is not the only possible way to satisfy a criterion. See the [PDF section of Techniques for WCAG 2.2](https://www.w3.org/WAI/WCAG22/Techniques/#pdf). No PDF validation is established by this Markdown guidance.
 
 **V4 RNIB Large and giant print.** RNIB describes large print as generally 16 to 18pt and discusses ways to find a suitable reading format. The 12 to 14pt general-print starting range in this guide is an editorial default, not a minimum established by that page. See [RNIB: Large and giant print](https://www.rnib.org.uk/living-with-sight-loss/independent-living/leisure/reading-and-books/large-and-giant-print/).
 

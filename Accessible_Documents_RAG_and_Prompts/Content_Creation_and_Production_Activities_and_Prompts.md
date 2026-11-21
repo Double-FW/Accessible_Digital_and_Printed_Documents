@@ -1,7 +1,7 @@
 # Accessible Digital and Printed Documents: human-managed content creation and production activities and prompts
 
-**Prepared:** 8 November 2026 · **Source revision:** `e3b2694b5a9d92be89ee49c20f0b350b1fd8188c`  
-**Source:** [Double-FW/Accessible_Digital_and_Printed_Documents](https://github.com/Double-FW/Accessible_Digital_and_Printed_Documents/tree/e3b2694b5a9d92be89ee49c20f0b350b1fd8188c)  
+**Prepared:** 8 November 2026 · **Updated:** 21 November 2026
+**Source:** [maintained Double-FW guidance](../README.md). Record the actual Git revision retrieved for each task; this is not a pinned source snapshot.
 **Audience:** authors, editors, designers, publishers, communication teams, producers, commissioners, access-service practitioners and technical/quality partners.
 
 ## Where the repository is useful
@@ -14,13 +14,13 @@ The activities below are an editorial application of the repository, not a claim
 
 ## How to use the prompts
 
-1. Attach [RAG_Reference.md](RAG_Reference.md). For selective retrieval, use the source routes below and [Source_Coverage.md](Source_Coverage.md).
+1. Use [RAG_Reference.md](RAG_Reference.md) as navigation, then retrieve or attach the actual relevant source files. The index alone is insufficient. Use the routes below and [Source_Coverage.md](Source_Coverage.md), including S006 terminology and S008 provenance/rights.
 2. Replace bracketed inputs with the actual project brief, artefacts and evidence. Supply the target task, audience, platform/setting, constraints and intended decision. Treat missing information as unknown.
-3. Use either example prompt for the activity. Both refer to this folder’s reference. Supply only appropriate project information; use anonymised research findings where possible.
+3. Use either example prompt for the activity. Both refer to the maintained guidance reached through this folder’s reference; “RAG” in a prompt means that retrieved source context, not the index alone. Supply only appropriate project information; use anonymised research findings where possible.
 4. Require source ID, filename and original section citations; distinguish source guidance, local proposal, observed result and uncertainty. Ask for evidence requests where an artefact cannot be inspected.
 5. Review the result with the named human roles and record decisions. A prompt output is a draft editorial/production aid, not implementation or evidence that a test ran. Do not defer disabled people’s involvement until final testing.
 
-**Reusable response contract:** “Use the attached RAG_Reference.md as the knowledge source. Cite source IDs, files and sections. Distinguish source statements, project evidence, recommendations and unknowns. Preserve applicable source identifiers. Do not invent research, capability, approvals or test results. Give a concrete content/production artefact, trade-offs, evidence requests and decisions for the human team.”
+**Reusable response contract:** “Use RAG_Reference.md to locate the actual maintained source files; retrieve or attach their relevant sections before answering. Cite source IDs, files and sections. Distinguish source statements, project evidence, recommendations and unknowns. Preserve applicable source identifiers. Do not invent research, capability, approvals or test results. Give a concrete content/production artefact, trade-offs, evidence requests and decisions for the human team.”
 
 ## Activity map
 
@@ -229,7 +229,7 @@ The activities below are an editorial application of the repository, not a claim
 
 - Combine structural, automated, manual and reader checks as appropriate.
 - Tie findings to exact edition/version and repair the source.
-- Separate checked, failed, untested and inapplicable items honestly.
+- Separate passed, failed, unknown, untested and inapplicable checks, and keep unresolved decisions distinct.
 
 **Expected output:** A scoped verification/release record and correction plan.
 
