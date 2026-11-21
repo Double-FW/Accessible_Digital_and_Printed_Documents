@@ -1,148 +1,60 @@
-# Accessible Digital and Printed Documents
+---
+title: "Accessible digital and printed documents"
+version: "1.1.0"
+updated: "2026-11-21"
+owner: "Double FW Ltd"
+license: "MIT"
+language: "en-GB"
+status: "editorial_guidance_for_local_adoption"
+---
 
-A practical, evidence-based guide to designing documents that remain readable, navigable, and usable across digital screens, print, and hybrid publishing formats.
+# Accessible digital and printed documents
 
-This repository contains a comprehensive design guide for creating accessible documentation that preserves meaning and usability for people using screen readers, magnification, braille, large print, and other access methods across digital and print outputs.
+Practical guidance for creating documents people can find, read, navigate, understand and use through visual reading, enlargement, speech, braille and appropriate alternative editions. It covers structured digital documents, screen-and-print publications, physical print and sustained book reading.
 
-## Short description
+Maintain one structured content source where practicable, then produce editions suited to the task and reading context. Equivalent meaning and useful access matter; the same fixed layout need not serve every medium.
 
-This project provides a structured framework for accessible document design across typography, structure, colour, images, data tables, forms, PDFs, EPUBs, and printed books. It is intended for documentation teams, designers, editors, and accessibility reviewers working with digital and physical publication formats.
+## Start here
 
-## Repository contents
+1. Read the audience, task and format guidance in [Accessible documentation design](Accessible_documentation_design.md), sections 1–6.
+2. Apply section 7 for digital delivery, section 8 for hybrid output and section 9 for physical print and books.
+3. Use section 10 to plan checks of actual delivered files or proofs. Keep proposed checks distinct from completed evidence.
+4. For AI-assisted work, read [AGENTS.md](AGENTS.md), section 11 and the [activity prompts](Accessible_Documents_RAG_and_Prompts/Content_Creation_and_Production_Activities_and_Prompts.md).
+5. Use [Terminology alignment](Terminology_Alignment.md) and [Related Double-FW guidance](Related_Double_FW_Guidance.md) for shared meanings and specialist support.
 
-- `Accessible_documentation_design.md` — the complete guidance document
-- `AGENTS.md` — operational instructions and accessibility design guardrails for AI-assisted work in this repository
-- `README.md` — overview and usage notes
-- `LICENSE` — MIT license
+## What is included
 
-## Why this guide matters
+| Resource | Purpose |
+| --- | --- |
+| [Main design guide](Accessible_documentation_design.md) | Twelve sections and stable PLAN, STRUCT, TYPE, VIS, LANG, IMAGE, DATA, FORM, SPECIAL, DIGITAL, HYBRID, PRINT, BOOK, QA and AI rule IDs. |
+| [Agent instructions](AGENTS.md) | Metadata, scope, detailed operational rules, authority and privacy boundaries, evidence handling and an illustrative review template. |
+| [Terminology alignment](Terminology_Alignment.md) | Experience, equivalence, cognitive identifiers, standards meanings and evidence states. |
+| [Related guidance](Related_Double_FW_Guidance.md) | Public Double-FW resources and their relevant uses. |
+| [Production workflow and handoff map](Production_Workflow_and_Handoff_Map.md) | Coordinate documents with email and audiovisual assets without confusing their specialist requirements. |
+| [RAG and prompt pack](Accessible_Documents_RAG_and_Prompts/README.md) | Maintained retrieval routes, source coverage and eight activities with sixteen example prompts. |
+| [Provenance and rights](NOTICE.md) | Reconstruction limitations, historical attachments and external rights. |
+| [MIT licence](LICENSE) | Sole project licence and required copyright/permission notice. |
 
-Accessible documents are not just visually clean; they must remain understandable and operable across different output methods and assistive technologies. This guide focuses on preserving:
+## Scope and limitations
 
-- Meaning across reading modes
-- Reading order and navigation
-- Usability for screen readers and keyboard users
-- Clarity for low vision and large-print readers
-- Effective communication in physical print and books
-- Equivalent information for images, charts, tables, and forms
-- Reliable verification before release
+This is documentation guidance, not an installed generation tool, automated checker or complete WCAG, PDF/UA or EPUB conformance checklist. A successful export or checker result cannot establish universal accessibility. Inspect each delivered edition and use appropriate structural, manual and reader checks. Digital contrast calculations do not certify paper, ink or binding.
 
-## What is included in the guide
+MUST/SHOULD wording expresses the guide’s production policy when locally adopted; it does not turn every recommendation into law or a WCAG requirement. Identify the applicable standard, edition, level, context and any binding obligations separately. House typography defaults are starting values, not universal minima or clinical claims.
 
-The document is organized into practical sections:
+The guide contains reconstructed wording from 7 November 2026. Eleven historical attachments were unavailable for inspection. Their source register is preserved for provenance, not as verified evidence or a dependency on private files. The 21 November editorial revision does not verify those attachments or recreate lost originals. See [section 12](Accessible_documentation_design.md#12-source-reconciliation-and-provenance) and [NOTICE](NOTICE.md).
 
-1. Define the reading experience
-2. Build structure before appearance
-3. Select and set type
-4. Use colour and space to support reading
-5. Preserve language and information in images
-6. Design tables, forms, and specialist content
-7. Deliver a usable digital edition
-8. Make screen content work on paper
-9. Design physical documents and books
-10. Verify the delivered editions
-11. Translate the guide into LLM instructions
-12. Source reconciliation and provenance
+## Agent and training use
 
-These sections cover topics such as:
+Retrieve maintained source sections with their scope, qualifications and rule IDs. The [RAG reference](Accessible_Documents_RAG_and_Prompts/RAG_Reference.md) is an index, not a complete embedded corpus or functioning retrieval pipeline. Do not ingest navigation, historical duplicates and source content as independent evidence for the same rule. Record the Git revision, path and section for reproducibility; do not silently truncate a rule or table.
 
-- content structure and heading hierarchy
-- reflowable versus fixed-layout output
-- typography and readability
-- contrast and colour use
-- alt text and accessible image descriptions
-- table structure and relationships
-- form accessibility
-- PDF and EPUB quality checks
-- print layout and large print considerations
-- release verification and evidence-based review
+Keep source guidance, project evidence, synthetic examples, proposals and authorised decisions distinct. `unknown`, `not_tested` and `not_applicable` are different states; unresolved decisions are separate. A prompt output is not a test result or permission to publish. Exclude confidential, personal or otherwise unauthorised material from public exports.
 
-## Who this is for
+No Hugging Face sync workflow or dataset exporter is included at this revision. Preparing reusable documentation does not itself create or update a dataset.
 
-This resource is useful for:
+## Maintaining the guidance
 
-- technical writers and content authors
-- UX and design teams
-- editors and publishers
-- accessibility specialists
-- front-end developers creating web and PDF content
-- teams producing educational, policy, product, or public-facing documents
-- teams using AI tools to draft or transform documents
+Preserve stable rule IDs and update the guide and corresponding agent rules together. Check relative links, public repository routes, metadata, provenance and the retrieval index after changes. Reassess affected output evidence when content, export software, format or reading context changes. Keep actual source checks, test dates and approvals separate; changing an editorial date does not renew them.
 
-## How to use this repository
+## Licence
 
-Start with the main guide:
-
-- Read `Accessible_documentation_design.md` for the full document
-- Review `AGENTS.md` if you are using AI agents or automation in this repository so the project-specific accessibility and review instructions are applied consistently
-- Use it as a reference during design and review
-- Apply the guidance when creating or revising documents for web, print, PDFs, EPUBs, and hybrid outputs
-- Use the verification checklist before publishing or releasing a final edition
-
-## Suggested reading path
-
-If you are new to the topic, a good progression is:
-
-1. Read the introduction and the section on defining the reading experience
-2. Review structure and typography guidance
-3. Check the sections on colour, images, tables, and forms
-4. Review digital and print delivery requirements
-5. Use the verification and release checks before sign-off
-
-## Key principles
-
-The document is built around several core principles:
-
-- One structured source should support multiple editions
-- Content structure must be meaningful before styling
-- Reading order must be preserved across output formats
-- Essential meaning must survive both screen and print outputs
-- Accessibility should be verified with both automated and human review
-- Standards and practical experience should be reconciled with clear evidence
-
-## Standards and evidence
-
-The guide references a range of accessibility resources and formats, including WCAG, PDF accessibility guidance, EPUB accessibility guidance, and practical design recommendations. It also distinguishes between:
-
-- evidence-based source rules
-- standard-based rules
-- source-based recommendations
-- synthesis-based practical guidance
-- verification methods
-
-This makes the document suitable for both policy-aligned work and operational publishing practice.
-
-## Example use cases
-
-This guide is applicable to:
-
-- policy documents and government publications
-- product manuals and onboarding guides
-- educational materials and study notes
-- help centres and documentation portals
-- reports and annual publications
-- books and print publications
-- documents produced in collaboration with AI writing tools
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for full terms.
-
-## Contributing
-
-This repository is primarily a documentation resource. Contributions are welcome if you want to:
-
-- improve the wording and clarity of the guide
-- expand examples or case studies
-- add format-specific accessibility checklists
-- improve the organisation of the main document
-- add supporting materials for authors and teams
-- align AI-assisted work with the repository instructions in `AGENTS.md`
-
-## Project status
-
-This repository is a reference document and knowledge resource for accessible document design. It is intended to support thoughtful, user-centred, standards-aware publication practices across digital, hybrid, and print environments.
-
-## Recommended next step
-
-Open `Accessible_documentation_design.md` and use it as a working reference when creating accessible documentation for your audience. If you are working with AI assistance in this repository, also review `AGENTS.md` for the project-specific operating guidance.
+The repository is MIT licensed, copyright 2026 Double FW Ltd. See [LICENSE](LICENSE). External references retain their own rights; the historical reference register does not add another project licence or relicense third-party material. See [NOTICE](NOTICE.md) before importing external content.

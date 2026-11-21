@@ -1,12 +1,18 @@
+---
+title: "Production workflow and handoff map"
+license: "MIT"
+updated: "2026-11-21"
+---
+
 # Production workflow and handoff map
 
 This is an editorial coordination guide built from the following five sources, not an adopted production specification. It helps teams keep meaning and access consistent across formats while leaving specialist and release decisions with competent people.
 
-https://github.com/Double-FW/Closed-Caption-Subtitles
-https://github.com/Double-FW/Audio-Descriptions
-https://github.com/Double-FW/Accessible-Film-TV-and-Video-Content-Production-Management
-https://github.com/Double-FW/Accessible-Email-Design
-https://github.com/Double-FW/Accessible_Digital_and_Printed_Documents
+- [Closed captions and subtitles](https://github.com/Double-FW/Closed-Caption-Subtitles)
+- [Audio descriptions](https://github.com/Double-FW/Audio-Descriptions)
+- [Accessible film, TV and video production](https://github.com/Double-FW/Accessible-Film-TV-and-Video-Content-Production-Management)
+- [Accessible email design](https://github.com/Double-FW/Accessible-Email-Design)
+- [Digital and printed documents](README.md)
 
 
 ## Choose the source for the work
@@ -22,7 +28,7 @@ https://github.com/Double-FW/Accessible_Digital_and_Printed_Documents
 | How should graphics, captions and signing coexist? | Production management | CCS for positioning; documents for supplementary data explanations | Coordinated framing/graphics/track specification |
 | How are release and actual audience access evidenced? | The owning specialist guide plus production management | All affected output formats | Version-specific QA, human decision and published-path evidence |
 
-The video repository’s two existing production/AD and production/CCS mapping files are retained in full, including their extensionless source filenames. They support routing and dependencies; the current specialist source remains the place to inspect detailed authoring requirements.
+Use the video repository’s [production and audio description mapping](https://github.com/Double-FW/Accessible-Film-TV-and-Video-Content-Production-Management/blob/main/Production_and_Audio_Description_Mapping.md) and [production and captions mapping](https://github.com/Double-FW/Accessible-Film-TV-and-Video-Content-Production-Management/blob/main/Production_and_Captions_Mapping.md) for routing and dependencies. These documents are linked, not bundled here. Inspect the current specialist source for detailed authoring requirements.
 
 ## Work from meaning to real delivered outputs
 
@@ -55,11 +61,11 @@ These are adaptable coordination activities. The sources do not establish an ins
 
 Record the production/document/message identity; exact source/output version; language/audience; edition or asset role; destination/profile; creative intent; required factual meaning; adopted source requirements and rule IDs; dependencies; rights reference; practitioner/reviewer; actual evidence and limits; unresolved issues; corrective action; human decision; and reassessment trigger.
 
-Use the supplied AD commissioning, cue, audit and release templates where they fit. They are blank working resources, not proof that a production has been audited. Caption CCS identifiers and document PLAN/STRUCT/TYPE/DIGITAL/QA identifiers have different scopes; retain their names and owning source rather than flattening them into an unexplained score.
+Use the AD commissioning, cue, audit and release templates in the linked Audio Descriptions repository where they fit; they are not supplied in this document repository. They are blank working resources, not proof that a production has been audited. Caption CCS identifiers and document PLAN/STRUCT/TYPE/DIGITAL/QA identifiers have different scopes; retain their names and owning source rather than flattening them into an unexplained score.
 
 ## Keep evidence types distinct
 
-- Source completeness checks establish that this pack preserves the retrieved guidance; they do not establish accessibility of a production.
+- An inventory or source-completeness check establishes only the stated coverage at the recorded revision; it does not establish accessibility of a production.
 - A semantic/structural check and a visual proof answer different questions. A readable PDF image does not demonstrate reading order or tags.
 - Email code inspection does not establish actual client, MIME, assistive-technology or sending behaviour.
 - A caption file validator does not verify speech fidelity, meaningful sound, pacing, presentation or player operation.
